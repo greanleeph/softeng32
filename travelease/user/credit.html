@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEase - Card Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Credit / Debit Card</h2>
+        <form action="#" method="POST">
+            <label>Card Number</label>
+            <input type="text" placeholder="000 000 000 000" required>
+
+            <label>Card Holder's Name</label>
+            <input type="text" placeholder="Jeff Bezos" required>
+
+            <div class="row">
+                <div>
+                    <label>Expiry Date</label>
+                    <input type="text" placeholder="MM/YYYY" required>
+                </div>
+                <div>
+                    <label>CVC / CVV</label>
+                    <input type="text" placeholder="123" required>
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="default-card">
+                <label for="default-card">Set as default card</label>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="application-name" content="TravelEase admin login">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelEase Landing Site</title>
+    
+    <meta name="description" content="Login site for TravelEase admins">
+    <meta name="keywords" content="TravelEase Admin, TravelEase Administrator, TravelEase admin landing, TravelEase admin login, TravelEase admin sign in">
+    <meta name="author" content="Bryce Concepcion">
+
+	<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar-->
+    <div class="navbar">
+        <img class="logo" src="Assets/navbar_logo_admin.png" alt="TravelEase Logo">
+        <button class="button" style="position: absolute; right: 12px;" id="signInButton" onclick="showSignInMenu()">Sign In</button>
+    </div>
+
+    <!-- Sign-in menu -->
+    <div class="menu" id="signInMenu" style="display: none; ">
+        <button class="close-button" onclick="closeMenu()"></button>
+        <h1 class="menu-heading">Sign-in</h1>
+        <form>
+            <label class="input-label" for="username">Username</label>
+            <input type="text" id="username" class="text-input" placeholder="Username">
+            <label class="input-label" for="password">Password</label>
+            <input type="password" id="password" class="text-input" placeholder="Password">
+        </form>
+        
+        <a href="#" class="link">Forgot Password</a>
+        <button class="button-big" onclick="goToHome()">Sign In</button>
+
+        <h3 style="text-align: center">Only TravelEase admins can sign in here.</h3>
+        <hr style="border: 0;">
+        <p style="text-align: center">If you are a user and you wish to sign in to your personal<br>account, sign in through the TravelEase chatbot browser<br>extension or through the official TravelEase mobile app.</p>
+    </div>
+
+    <!-- Body -->
+    <div style="margin-top: 10%;">
+        <img src="Assets/travelease_body_logo.png" alt="TravelEase Logo" style="width: 30%; height: auto;">
+    </div>
+
+    <div class="body">
+        <h1 style="margin: 0; color: #729f38; font-weight: bold; font-size: 60px;">Administrator</h1>
+        <hr style="border: 0; padding: 10px;">
+        <h3>Official website for TravelEase admins.</h3>
+        <hr style="border: 0; padding: 10px;">
+        <p>As an admin, you have great power.</p>
+        <p>And with great power, comes great electricity bill.</p>
+    </div>
+</body>
+</html>
+

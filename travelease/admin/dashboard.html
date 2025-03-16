@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="application-name" content="TravelEase Admin Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+    
+    <meta name="description" content="Dashboard for TravelEase admins.">
+    <meta name="keywords" content="TravelEase Admin, TravelEase Administrator, TravelEase admin dashboard">
+    <meta name="author" content="Bryce Concepcion">
+
+	<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+	<div class="navbar">
+		<img onclick="goToHome()" class="logo" src="Assets/navbar_logo_admin.png" alt="TravelEase Logo" style="height: 30px; width: auto; padding: 10px;">
+        <nav>
+            <ul class ="nav-link">
+                <li><a href="dashboard.html" style="background-color: #729f38;"><img src="Assets/dashboard_icon.png" style="height: 16px; width: auto; padding-right: 5px;">Dashboard</a></li>
+                <li><a href="user_list.html"><img src="Assets/user_list_icon.png" style="height: 16px; width: auto; padding-right: 5px;"> User List</a></li>
+                <li><a href="performance_metrics.html"><img src="Assets/performance_metrics_icon.png" style="height: 16px; width: auto; padding-right: 5px;">Performance Metrics</a></li>
+                <li><a href="inbox.html"><img src="Assets/inbox_icon.png" style="height: 14px; width: auto; padding-right: 5px;">Inbox</a></li>
+                <li><a href="profits.html"><img src="Assets/profits_icon.png" style="height: 14px; width: auto; padding-right: 5px;">Profit</a></li>
+        </nav>
+        <div class="navbar-right-group">
+            <button class="navbar-button" id="notifButton"><img src="Assets/notif_icon.png" style="height: 20px; width: auto;" onclick="showNotifMenu()"></button>
+            <!--Make the user button style be specified in the style.css instead of in here-->
+            <button class="navbar-button" id="userButton"><img src="Assets/bot_icon.png" style="height: 26px; width: auto; padding-right: 5px;" onclick="showUserMenu()">Admin</button>
+        </div>
+	</div>
+
+    <div id="userMenu" class="menu" style="padding: 10px; width: 220px; display: none;">
+        <button class="button" style="width: 200px; height: auto; margin-bottom: 10px;" onclick="goToHome()">Account Settings</button>
+        <button class="button-danger" style="width: 200px; height: auto;" onclick="signOut()">Sign Out</button>
+    </div>
+
+    <div id="notifMenu" class="menu" style="padding: 10px; width: 300px; height: 700px; display: none;">
+        <!--This should be an unordered list, same as the one in ROCOCO-->
+        <!--
+        <div id="notif" class="notification" style="width: 200px; height: 60px; margin-bottom: 10px;">
+            <button id="closeNotif" class="close-button">&times;</button>
+            <p>Hello</p>
+        </div>
+        -->
+        <ul>
+            <li class="notification">Hello there</li>
+            <li class="notification">slfkajfdalfjk</li>
+            <li class="notification">sdlfkjnveueuryytt</li>
+        </ul>
+    </div>
+
+    <div class="body-heading">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div class="container" style="top: 200px; height: 200px;">
+        <div class="card" style="margin-left: 40px; margin-right: 20px;">
+            <h2>Total Active User</h2>
+            <p>[This is the scent of dead skin on a linoleum floor]</p>
+        </div>
+
+        <div class="card" style="margin-left: 20px; margin-right: 20px">
+            <h2>Premium Purchases</h2>
+            <p>[this is the scent of quarantine wings in a hospital]</p>
+        </div>
+
+        <div class="card" style="margin-right: 40px; margin-left: 20px">
+            <h2>Profits</h2>
+            <p>[it's not so pleasant and it's not so conventional]</p>
+        </div>
+    </div>
+    
+    <div id="overviewGraph" class="container">
+        <div class="card" style="height: 600px; margin: 40px;">
+            <h2>Overview</h2>
+            <p>[it sure as hell ain't normal but we deal...we deal]</p>
+        </div>
+    </div>
+    
+    <div id="userOverview" class="container">
+        <div class="card" style="height: 800px; margin: 40px;">
+            <h2>Online Users </h2>
+            <p>[the anesthetic never set in and I'm wondering where the apathy and urgency is that I thought I phoned in]</p>
+        </div>
+    </div>
+</body>
+</html>
